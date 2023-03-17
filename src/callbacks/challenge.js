@@ -2,7 +2,7 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest; //This line imp
 const API = 'https://api.escuelajs.co/api/v1'; //This line sets the API constant to the base URL of the API being used.
 
 function fetchData(urlApi, callback){ //This line declares the fetchData function, which takes two parameters: the urlApi to fetch data from, and a callback function that will be called when the data is received.
-    let xhttp = new XMLHttpRequest(); //This line creates a new XMLHttpRequest object and assigns it to the xhttp variable.
+    const xhttp = new XMLHttpRequest(); //This line creates a new XMLHttpRequest object and assigns it to the xhttp variable.
 
     xhttp.open('GET', urlApi, true); //This line initializes a new request by calling the open() method on the xhttp object. The first argument specifies the HTTP method (in this case, GET), the second argument is the URL to send the request to (urlApi), and the third argument specifies whether the request should be asynchronous (true).
     xhttp.onreadystatechange = function (event){ //This line sets up an event listener for the onreadystatechange event, which will be triggered when the state of the request changes.
